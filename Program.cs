@@ -5,8 +5,8 @@ namespace CSharp
     class Program
     {
         static void Main() {
-            string vastaus;
-            int res;
+            string syöte;
+            int vastaus;
 
             Random rd = new Random();
             int generatednumber = rd.Next(1,21);
@@ -14,52 +14,44 @@ namespace CSharp
             Console.WriteLine("Tervetuloa Arvaa Luku -peliin!");
             Console.WriteLine("Arvaa lukujen 1-20 väliltä, sinulla on kolme arvausta:");
 
-            vastaus = Console.ReadLine();
+            syöte = Console.ReadLine();
             
-            res = Convert.ToInt32(vastaus);
+            vastaus = Convert.ToInt32(syöte);
 
-            if (res == generatednumber) {
+            if (vastaus == generatednumber) {
                 Console.WriteLine("Arvasit oikein!");
                 System.Environment.Exit(1);
             }
-            else if (res > generatednumber) {
+            else if (vastaus > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienenpi kuin arvauksesi.");
             }
-            else if (res < generatednumber) {
+            else if (vastaus < generatednumber) {
                 Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
 
             Console.WriteLine("Arvaa toisen kerran:");
 
-            vastaus = Console.ReadLine();
-            
-            res = Convert.ToInt32(vastaus);
-
-            if (res == generatednumber) {
+            if (vastaus == generatednumber) {
                 Console.WriteLine("Arvasit oikein!");
                 System.Environment.Exit(1);
             }
-            else if (res > generatednumber) {
+            else if (vastaus > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
-            else if (res < generatednumber) {
+            else if (vastaus < generatednumber) {
                 Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
 
             Console.WriteLine("Arvaa viimeisen kerran:");
 
-            vastaus = Console.ReadLine();
-            
-            res = Convert.ToInt32(vastaus);
-
-            if (res == generatednumber) {
+            if (vastaus == generatednumber) {
                 Console.WriteLine("Arvasit oikein!");
                 System.Environment.Exit(1);
             }
-            else if (res > generatednumber) {
+            else if (vastaus > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
-            else if (res < generatednumber) {
+            else if (vastaus < generatednumber) {
                 Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
             
