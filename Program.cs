@@ -17,41 +17,41 @@ namespace CSharp
             syöte = Console.ReadLine();
             vastaus = Convert.ToInt32(syöte);
 
-            if (vastaus == generatednumber) {
-                Console.WriteLine("Arvasit oikein!");
-                System.Environment.Exit(1);
+            if (vastaus < generatednumber) {
+                Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
             else if (vastaus > generatednumber) {
-                Console.WriteLine("Oikea vastaus on pienenpi kuin arvauksesi.");
+                Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
-            else if (vastaus < generatednumber) {
-                Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
+            else {
+                Console.WriteLine("Arvasit oikein!");
+                System.Environment.Exit(1);
             }
 
             Console.WriteLine("Arvaa toisen kerran:");
 
-            if (vastaus == generatednumber) {
-                Console.WriteLine("Arvasit oikein!");
-                System.Environment.Exit(1);
+            if (vastaus < generatednumber) {
+                Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
             else if (vastaus > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
-            else if (vastaus < generatednumber) {
-                Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
+            else {
+                Console.WriteLine("Arvasit oikein!");
+                System.Environment.Exit(1);
             }
 
             Console.WriteLine("Arvaa viimeisen kerran:");
 
-            if (vastaus == generatednumber) {
-                Console.WriteLine("Arvasit oikein!");
-                System.Environment.Exit(1);
+            if (vastaus < generatednumber) {
+                Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
             else if (vastaus > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
-            else if (vastaus < generatednumber) {
-                Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
+            else {
+                Console.WriteLine("Arvasit oikein!");
+                System.Environment.Exit(1);
             }
             
             Console.WriteLine("Oikea vastaus on " + generatednumber + ".");
