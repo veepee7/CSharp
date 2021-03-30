@@ -11,6 +11,7 @@ namespace CSharp
             Random rd = new Random();
             int generatednumber = rd.Next(1,21);
 
+            Console.WriteLine("Tervetuloa Arvaa Luku -peliin!");
             Console.WriteLine("Arvaa lukujen 1-20 väliltä, sinulla on kolme arvausta:");
 
             vastaus = Console.ReadLine();
@@ -24,7 +25,7 @@ namespace CSharp
             else if (res > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienenpi kuin arvauksesi.");
             }
-            else {
+            else if (res < generatednumber) {
                 Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
 
@@ -41,7 +42,7 @@ namespace CSharp
             else if (res > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
-            else {
+            else if (res < generatednumber) {
                 Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
 
@@ -58,10 +59,13 @@ namespace CSharp
             else if (res > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
-            else {
+            else if (res < generatednumber) {
                 Console.WriteLine("Oikea vastaus on suurempi kuin vastauksesi.");
             }
+            
+            Console.WriteLine("Oikea vastaus on " + generatednumber + ".");
             Console.WriteLine("Peli ohi!");
+
         System.Environment.Exit(1);
         }
     }
