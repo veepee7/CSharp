@@ -11,7 +11,7 @@ namespace CSharp
             Random rd = new Random();
             int generatednumber = rd.Next(1,20);
 
-            Console.WriteLine("Arvaa lukujen 1-20 väliltä:");
+            Console.WriteLine("Arvaa lukujen 1-20 väliltä, sinulla on kolme arvausta:");
 
             vastaus1 = Console.ReadLine();
             
