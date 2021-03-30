@@ -15,7 +15,6 @@ namespace CSharp
             Console.WriteLine("Arvaa lukujen 1-20 väliltä, sinulla on kolme arvausta:");
 
             syöte = Console.ReadLine();
-            
             vastaus = Convert.ToInt32(syöte);
 
             if (vastaus == generatednumber) {
