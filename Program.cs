@@ -5,23 +5,23 @@ namespace CSharp
     class Program
     {
         static void Main() {
-            string vastaus1, vastaus2, vastaus3;
-            int res1, res2, res3;
+            string vastaus;
+            int res;
 
             Random rd = new Random();
-            int generatednumber = rd.Next(1,20);
+            int generatednumber = rd.Next(1,21);
 
             Console.WriteLine("Arvaa lukujen 1-20 väliltä, sinulla on kolme arvausta:");
 
-            vastaus1 = Console.ReadLine();
+            vastaus = Console.ReadLine();
             
-            res1 = Convert.ToInt32(vastaus1);
+            res = Convert.ToInt32(vastaus);
 
-            if (res1 == generatednumber) {
+            if (res == generatednumber) {
                 Console.WriteLine("Arvasit oikein!");
                 System.Environment.Exit(1);
             }
-            else if (res1 > generatednumber) {
+            else if (res > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienenpi kuin arvauksesi.");
             }
             else {
@@ -30,15 +30,15 @@ namespace CSharp
 
             Console.WriteLine("Arvaa toisen kerran:");
 
-            vastaus2 = Console.ReadLine();
+            vastaus = Console.ReadLine();
             
-            res2 = Convert.ToInt32(vastaus2);
+            res = Convert.ToInt32(vastaus);
 
-            if (res2 == generatednumber) {
+            if (res == generatednumber) {
                 Console.WriteLine("Arvasit oikein!");
                 System.Environment.Exit(1);
             }
-            else if (res2 > generatednumber) {
+            else if (res > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
             else {
@@ -47,15 +47,15 @@ namespace CSharp
 
             Console.WriteLine("Arvaa viimeisen kerran:");
 
-            vastaus3 = Console.ReadLine();
+            vastaus = Console.ReadLine();
             
-            res3 = Convert.ToInt32(vastaus3);
+            res = Convert.ToInt32(vastaus);
 
-            if (res3 == generatednumber) {
+            if (res == generatednumber) {
                 Console.WriteLine("Arvasit oikein!");
                 System.Environment.Exit(1);
             }
-            else if (res3 > generatednumber) {
+            else if (res > generatednumber) {
                 Console.WriteLine("Oikea vastaus on pienempi kuin arvauksesi.");
             }
             else {
