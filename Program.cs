@@ -4,7 +4,7 @@ namespace CSharp
 {
     class Program
     {
-        static void Main() {
+        static void Main(string[] args) {
             string syöte;
             int vastaus;
 
